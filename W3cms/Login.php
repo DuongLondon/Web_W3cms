@@ -28,7 +28,7 @@
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" name="pass" class="form-control border border-primary" >
                     </div>
-                    <p class="small"><a class="text-primary" href="forget-password.html">Forgot password?</a></p>
+                    <p class="small"><a class="text-primary" href="forgotPass.php">Forgot password?</a></p>
                     <div class="d-grid">
                         <button class="btn btn-primary" type="submit">Login</button>
                     </div>
