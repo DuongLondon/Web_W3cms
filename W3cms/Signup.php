@@ -13,22 +13,27 @@
         <div class="vh-100 d-flex justify-content-center align-items-center">
             <div class="col-md-4 p-5 shadow-sm border rounded-3">
                 <h2 class="text-center mb-4 text-primary">Sign Up Form</h2>
-                <form action="processLogin.php" method="post">
+                <form action="processSignup.php" method="post">
+                    <?php
+                        if(isset($_GET['response'])) {
+                            echo "<p style = color:red>{$_GET['response']}</p>";
+                        } 
+                    ?>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" name="email" class="form-control border border-primary">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Tên</label>
-                        <input type="email" name="ten" class="form-control border border-primary">
+                        <input  name="ten" class="form-control border border-primary">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Giới tính</label>
-                        <input type="email" name="gioi_tinh" class="form-control border border-primary">
+                        <input  name="gioi_tinh" class="form-control border border-primary">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Năm sinh</label>
-                        <input type="email" name="nam_sinh" class="form-control border border-primary">
+                        <input  name="nam_sinh" class="form-control border border-primary">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
