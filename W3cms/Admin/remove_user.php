@@ -18,6 +18,6 @@
         $row['nam_sinh'];
     }
     if($result){
-    header("Location:index.php?response=$response");
+    header("Location:adminHome.php?response=$response");
     }
 ?>

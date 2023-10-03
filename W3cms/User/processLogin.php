@@ -18,7 +18,7 @@ if($result->rowCount()>0){
     header("Location:index.php");
     
 }else{
-    header("Location:Login.php?response=$response");
+    header("Location:User/Login.php?response=$response");
 }
 // Sau khi xác thực thành công
 

@@ -11,10 +11,10 @@ require_once 'connection.php';
 $updatesql = "UPDATE user SET ten='$t',gioi_tinh='$gioi_tinh',nam_sinh='$nam_sinh' WHERE id=$id";
 $stmt = $conn->prepare($updatesql);
 $stmt->execute();
-$result = $conn->query($updatesql);
 //thuc thi cau lenh
 if($result){
     header("Location:index.php");
 }
 
+    
 ?>

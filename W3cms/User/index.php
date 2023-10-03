@@ -12,12 +12,12 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3cms</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-icons-1.11.1/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="bootstrap-icons-1.11.1/bootstrap-icons.css">
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.esm.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.1/bootstrap-icons.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.esm.js"></script>
 </head>
 <body>
     <div class="row">
@@ -278,10 +278,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
                       echo"<td>".$row['nam_sinh']."</td>";
                       echo"<td><a href='detail.php?id=$row[id]'><i class='bi bi-eye'></i></a></td>";
                       echo"<td>";
-                          echo"<a href='edit.php?id=$row[id]' class='btn btn-info'>Sửa";
-                          echo"</a>"; 
-                          echo"<a onclick=\"return confirm('Bạn có muốn xoá không ?');\" href='remove_user.php?id=$row[id]'class='btn btn-danger'>Xoá";
-                          echo"</a>";
                       echo"<td>".$row['email'];
                       echo"<td>".$row['pass'];
               }
